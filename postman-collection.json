@@ -1,0 +1,384 @@
+{
+    "info": {
+      "name": "sims",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Charges",
+        "item": [
+          {
+            "name": "Get All Charges",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:5000/charges",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["charges"]
+              }
+            }
+          },
+          {
+            "name": "Create Charge",
+            "request": {
+              "method": "POST",
+              "url": {
+                "raw": "http://localhost:5000/charges",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["charges"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"structure_id\": 1, \"student_id\": 1 }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Update Charge",
+            "request": {
+              "method": "PUT",
+              "url": {
+                "raw": "http://localhost:5000/charges/1/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["charges", "1", "1"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"structure_id\": 2, \"student_id\": 1 }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Delete Charge",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:5000/charges/1/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["charges", "1", "1"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Deposits",
+        "item": [
+          {
+            "name": "Get All Deposits",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:5000/deposits",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["deposits"]
+              }
+            }
+          },
+          {
+            "name": "Create Deposit",
+            "request": {
+              "method": "POST",
+              "url": {
+                "raw": "http://localhost:5000/deposits",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["deposits"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"student_id\": 1, \"amount\": 1000 }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Update Deposit",
+            "request": {
+              "method": "PUT",
+              "url": {
+                "raw": "http://localhost:5000/deposits/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["deposits", "1"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"student_id\": 1, \"amount\": 1500 }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Delete Deposit",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:5000/deposits/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["deposits", "1"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Statuses",
+        "item": [
+          {
+            "name": "Get All Statuses",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:5000/statuses",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["statuses"]
+              }
+            }
+          },
+          {
+            "name": "Create Status",
+            "request": {
+              "method": "POST",
+              "url": {
+                "raw": "http://localhost:5000/statuses",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["statuses"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"student_id\": 1, \"status\": 1 }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Update Status",
+            "request": {
+              "method": "PUT",
+              "url": {
+                "raw": "http://localhost:5000/statuses/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["statuses", "1"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"student_id\": 1, \"status\": 2 }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Delete Status",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:5000/statuses/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["statuses", "1"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Structures",
+        "item": [
+          {
+            "name": "Get All Structures",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:5000/structures",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["structures"]
+              }
+            }
+          },
+          {
+            "name": "Create Structure",
+            "request": {
+              "method": "POST",
+              "url": {
+                "raw": "http://localhost:5000/structures",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["structures"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"title\": \"New Structure\", \"amount\": 5000, \"grades\": \"Grade 1\" }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Update Structure",
+            "request": {
+              "method": "PUT",
+              "url": {
+                "raw": "http://localhost:5000/structures/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["structures", "1"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"title\": \"Updated Structure\", \"amount\": 6000, \"grades\": \"Grade 2\" }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Delete Structure",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:5000/structures/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["structures", "1"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Students",
+        "item": [
+          {
+            "name": "Get All Students",
+            "request": {
+              "method": "GET",
+              "url": {
+                "raw": "http://localhost:5000/students",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["students"]
+              }
+            }
+          },
+          {
+            "name": "Create Student",
+            "request": {
+              "method": "POST",
+              "url": {
+                "raw": "http://localhost:5000/students",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["students"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"name\": \"John Doe\", \"grade\": \"Grade 1\" }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Update Student",
+            "request": {
+              "method": "PUT",
+              "url": {
+                "raw": "http://localhost:5000/students/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["students", "1"]
+              },
+              "body": {
+                "mode": "raw",
+                "raw": "{ \"name\": \"Jane Doe\", \"grade\": \"Grade 2\" }",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "name": "Delete Student",
+            "request": {
+              "method": "DELETE",
+              "url": {
+                "raw": "http://localhost:5000/students/1",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "5000",
+                "path": ["students", "1"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
