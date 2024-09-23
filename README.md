@@ -47,7 +47,8 @@ DB_NAME=
 PORT=
 ```
 
-proceed with the following in your terminal window:
+- Start XAMPP, and turn on MySQL and Apache.
+- Proceed with the following in your terminal window:
 
 ```bash
 # install dependencies

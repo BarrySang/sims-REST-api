@@ -1,5 +1,6 @@
 const connection = require('../db_setup/db'); // Database connection
 
+// execute charges
 exports.createCharge = (req, res) => {
   const structure_id = req.body.structure_id; // Assuming structure_id is passed in the request body
 
