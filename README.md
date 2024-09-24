@@ -51,17 +51,13 @@ PORT=
 - Proceed with the following in your terminal window:
 
 ```bash
-# install dependencies
-npm install
+npm run setup
 
-# set up tables
-npm run create-tables
+```
 
-# seed tables
-npm run seed
-
-# run dev server
-npm run server
+which runs the the setup commands sequentially sequentially:
+```bash
+"setup": "npm install && npm run create-tables && npm run seed && npm run server",
 ```
 
 ## Further Database Actions
